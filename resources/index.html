@@ -1,0 +1,45 @@
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+	<body><div style="text-align:center;">
+		<h1>root page hit</h1>
+		</div>
+<table>
+  <tr>
+    <th>Page</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Page 1</td>
+    <td><a href="/firstPage.html">First Page</a></td>
+  </tr>
+  <tr>
+    <td>Page 2</td>
+    <td><a href="/secondPage.html">Second Page</a></td>
+  </tr>
+</table>
+<br>
+<img src="cat.jpg" alt="A cat" width="200" height="225" class="center">
+<br>
+<div style="text-align:center;">
+<a href="/cat.jpg" download><button>Download cat picture</button></a>
+</div>
+<br><br>
+<form action="/" method="post" style="text-align:center;">
+  <label for="data">Data:</label><br>
+  <input type="text" id="data" name="data" value=""><br>
+  <input type="submit" value="Post to self">
+</form> 
+	</body>
+</html>
