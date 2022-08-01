@@ -1,6 +1,7 @@
 # CamsServer
 A Java based HTTP/Application server focused on simplifying the web development process.
 
+![serverHome](https://user-images.githubusercontent.com/81730723/182142774-b9e724f5-11ad-4234-980e-4e3492ad6b17.JPG)
 
 This server is an exteremly lightweight http java server based on simplicity.
 The goal is to simplify page -> API development.
@@ -21,6 +22,10 @@ when testing on a Linux machine and have not had time to investigate.
 *****Creating pages and server logic*****
 Examples of pages and server logic can be found in the resources folder.
 
+![second](https://user-images.githubusercontent.com/81730723/182142878-b3487d69-b334-4a5c-9b70-62a6d320f716.JPG)
+
+![secondPost](https://user-images.githubusercontent.com/81730723/182142920-5cd69966-c056-4922-9b8f-1d9c42e422ec.JPG)
+
 While these are example files that can be deleted or replaced, the index 
 page and error page are special pages that must remain (can be changed though!).
 
@@ -40,6 +45,7 @@ If you would like to use the built in error handling feature: Your custom functi
 a String that either says "SUCCESS" or returns the error message. This will be displayed on the 
 error page.
 
+![errorPage](https://user-images.githubusercontent.com/81730723/182143101-8df40506-057d-4b53-a1d9-6c4709b5a0c5.JPG)
 
 To further explain use, lets look at the two provided examples- Index.java and SecondPage.java
 Any time we use this functionality, it must have two methods with the accept names and that
@@ -58,6 +64,8 @@ error handling here- if an exception occurs, it will return the error message wh
 load on the error.html page. The post action here is using a special method that will not 
 respond with a document, but will instead respond with the passed in message- this would 
 be useful for a API respond/curl/ajax.
+
+![curlRequest](https://user-images.githubusercontent.com/81730723/182143639-88fd4391-a43d-4a5e-b90f-c8ba0f9d5eff.JPG)
 
 You can also use the PageServer.replace(String original, HashMap<String, String>) to replace 
 the regex ${<YOUR-PLACEHOLDER} for dynamic page building.
